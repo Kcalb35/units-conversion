@@ -19,6 +19,6 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag hblack35/units-conversion
+      run: docker build . --tag hblack35/units-conversion
     - name: push the Docker image
       run: docker push hblack35/units-conversion
