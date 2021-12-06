@@ -9,7 +9,7 @@ function Units(prop) {
 	return (
 		<Row justify="start">
 			{prop.suffixs.map((s, i) =>
-				<Col span={6} key={s}>
+				<Col span={4} key={s}>
 					<Input suffix={s} value={value[i]} onChange={
 						e => {
 							const str = e.target.value;
